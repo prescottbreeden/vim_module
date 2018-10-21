@@ -1,0 +1,63 @@
+Why Vim?
+
+- Lightweight
+- Makes some editing really easy
+- Everywhere
+- Remote coding via ssh
+- Pair programming (ssh + tmux)
+- Important skill (like regex)
+- It's important to 'Feel Stupid', Learn Somthing
+
+"Vim is like medicine, if used wrong you can kill people with it and there's 
+always a better doctor than you somewhere"
+
+Normal mode: i.e. surgical strike mode
+Insert mode:
+Visual mode:
+
+Registry: because 26 clipboards are better than 1
+
+Vim commands:
+  - h,j,k,l
+  - move to line number
+  - H, L, M (high, low, medium)
+  - zz
+  - searching
+  - f: inclusive search in line
+  - t: exclusive search in line
+  - viw : highlight word cursor is on
+  - diw : delete word cursor is on
+  - c-v : vertical visual block
+  - a : append text after cursor
+  - A : append text at end of the line
+  - i : insert text before cursor
+  - I : insert text before first non-blank in line
+  - s : erase the current letter under the cursor, set insert-mode
+  - S : Erase the whole line, set insert-mode
+  - "0 : most recent yanked text
+  - C-b: C-f, C-d, C-u
+
+-------------------
+  Hipster Ipsum
+-------------------
+Lorem ipsum dolor amet la croix ethical tilde, try-hard tbh shabby chic tumblr 
+paleo. Cronut kitsch retro, pok pok gluten-free try-hard bushwick edison bulb 
+aesthetic organic shaman prism biodiesel coloring book. Crucifix selfies poke 
+franzen, pinterest normcore gentrify man bun chambray organic. Tilde chillwave 
+taxidermy helvetica, semiotics mixtape freegan try-hard adaptogen dreamcatcher 
+pickled. Mixtape occupy kinfolk live-edge. 90's you probably haven't heard of 
+them copper mug, cardigan flexitarian meh iPhone pour-over intelligentsia 
+disrupt +1. Ugh copper mug vape, lyft poke williamsburg pinterest jean shorts 
+pitchfork.
+
+-------------------
+  Pokemon Ipsum
+-------------------
+Pokem ipsum dolor sit amet Gliscor Ho-oh Rhyhorn Torkoal Koffing Graveler. 
+Leech Life Magmortar Excadrill Bellossom Zephyr Badge Accelgor Magcargo. Ghost 
+Venipede Pidgeot to train them is my cause Super Potion Ferroseed Klink. Sonic 
+Boom Beldum Smoochum Vine Whip Cottonee Sandile Litwick. Harden Doduo Politoed 
+Misty gym Murkrow Moltres.
+
+
+

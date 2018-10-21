@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i,900");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  font-size: 2rem; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #3f4d5a;
+  font-weight: 700; }
+  a:hover {
+    text-decoration: underline; }
+
+.u-center {
+  margin: 0 auto !important; }
+
+.u-width-50 {
+  width: 50% !important; }
+
+.u-list-circle {
+  list-style-type: circle !important; }
+
+.u-list-square {
+  list-style-type: square !important; }
+
+.u-list-disc {
+  list-style-type: disc !important; }
+
+.u-border-solid {
+  border: 1px solid black; }
+
+.u-border-dashed {
+  border: 1px solid black; }
+
+.btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: all .2s;
+  border: 1px solid black;
+  color: black;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  width: 10%;
+  text-align: center; }
+  .btn:hover {
+    background-color: steelblue;
+    color: white;
+    width: 20%; }
+
+.module__container {
+  padding: 2rem 3rem; }
+
+.module__sub-title {
+  margin-top: 3rem; }
+
+.module__objectives {
+  margin-top: 2rem; }
+
+.module__list {
+  margin-top: 1rem;
+  list-style-type: decimal;
+  padding: 0 1rem; }
+  .module__list--item {
+    margin: 1rem 3.5rem; }
+
+.module__text {
+  margin-top: 1rem; }
+
+.module__terminal-code {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #eee;
+  font-family: courier;
+  font-size: 1.5rem; }
+
+.module__video video {
+  width: 100%;
+  height: auto; }
+
+.module__assignment {
+  border: 2px solid black; }
+
+.module__img {
+  width: 100%; }
+
+.module__folders {
+  background-color: #eee; }
+
+.module__markup {
+  background-color: #eee; }
+
+.module__buttons {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; }
+
+.header {
+  padding: 2rem 1rem;
+  background-color: #1b9bc5;
+  color: #eee;
+  text-align: center; }
+
+.nav {
+  width: 30%;
+  min-width: 25rem;
+  max-width: 30rem;
+  background-color: #3f4d5a;
+  color: #eee; }
+  .nav__link {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 700; }
+    .nav__link:hover {
+      text-decoration: underline; }
+  .nav__section--title {
+    margin: 1rem; }
+  .nav__section--item {
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 2rem; }
+    .nav__section--item:hover {
+      background-color: #1b9bc5;
+      color: yellow;
+      cursor: pointer; }
+
+.app {
+  border: 1px solid #333; }
+  .app__container {
+    width: 100%;
+    display: flex; }
