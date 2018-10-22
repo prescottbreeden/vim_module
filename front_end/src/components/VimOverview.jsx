@@ -8,7 +8,7 @@ const SassOverview = (props) => {
   return (
     <div className="module">
       <div className="module__container">
-        <h2 className="module__title">Sass Overview</h2> 
+        <h2 className="module__title">The Vim Koolaid</h2> 
         <h3 className="module__objectives">
           Learning Objectives:
         </h3>
@@ -36,11 +36,36 @@ const SassOverview = (props) => {
           Unix program Vi but added numerous new ones as well.  All commands can 
           be given with the keyboard which has the advantage that you never need 
           to move your fingers off the 'home' position (index fingers on 'J' and 
-          'F'). This is the largest reason that Vim has been listed as one of 
-          the best text editors available for any system by non-Vim users for 
-          over 15 years, and the greatest text editor ever created by actual Vim 
-          users.
+          'F').
         </p>
+        <h3 className="module__objectives">
+          A brief history of Vi
+        </h3>
+        <p className="module__text">
+          The evolution of Vim is intricately woven to the history of Vi. Vi was
+          created in 1976 and, up until then, some of the most popular editors, like 
+          "qed", would appear completely alien to us today.  These "line-editors" 
+          had no menus, and often required typing out regex strings in order to 
+          navigate around because they could only view one line at a time. Take 
+          a moment to imagine writing a program where you can only read one line 
+          at a time and if you wanted to move to a new location you had to write 
+          out a regex string on a basic teletype before telling the computer to 
+          try and compile it down to machine code. 
+        </p>
+        <p className="module__text">
+          Vi was created on a computer that had no arrow keys and a small 
+          escape key that jutted out where our Tab-key is now. Because of this, 
+          when Vi was being written, the movement keys were mapped to h, j, 
+          k, and l, the same movement keys used in Vim to this day. Indeed the 
+          vast majority of decisions that lead to the creation of Vi were purely 
+          due to the constraints of computers at the time.  Thus it is with some 
+          humor to remember that even Bill Joy, the guy who created Vi, jokes 
+          that "People don't know that Vi was written for a world that doesn't 
+          exist anymore." It is a testament to the software that it has remained 
+          one of the most celebrated programs ever written and amongst the most 
+          used editors in the world to this day, over 40 years later.
+        </p>
+
         <h3 className="module__objectives">
           Vim is fast
         </h3>
@@ -48,34 +73,51 @@ const SassOverview = (props) => {
           As web development continues to evolve, the size of projects are becoming 
           orders of magnitude larger. One of the largest issues that VScode is 
           currently faced with is the amount of memory it consumes just to open 
-          even an boiler React app without spawning numerous memory error messages.
+          even a boiler React app without spitting out memory error messages.
         </p>
         <p className="module__text">
           Vi was written in an era when sometimes it took seconds for a computer 
           to respond to a single keystroke, so there simply wasn't the resources 
           to create a memory-expensive editor. Because of this, it was essential 
-          that Vi could complete complex tasks with just a single keystroke, 
-          thus resulting in an editor that is not only lightweight but capable 
-          of performing at lightning speeds.
+          that Vi could complete complex tasks by writing out simple commands that 
+          a computer could execute without requiring continuous feedback to the 
+          user.
         </p>
         <h3 className="module__objectives">
           Vim is powerful
         </h3>
         <p className="module__text">
-          It would be logical to deduct that if Vim is so lightweight that it 
-          uses just a fraction of the memory that other common editors use, then 
+          It would be logical to deduct that if Vim is so lightweight (using  
+          just a fraction of the memory that other standard editors use) then 
           other editors must be using that memory to offer more power. Yet, the 
           irony is that even the best rated editors like VScode, Atom, Sublime, 
           do not even approach what Vim can do before we begin adding our own 
-          custom plugins, macros and key mappings.
+          custom plugins, macros and key mappings. For instance, every programmer 
+          is well acquainted with their clipboard for copying and pasting code. 
+          Vim has the equivalent of nearly 40 clipboards (registries) which can append 
+          text to them at any point in time. This means that you can scan down 
+          your code line by line and grab specific lines related to a function you wish to
+          refactor to be independent of its current function and just continue 
+          adding them to the same registry, and then paste it all at once to the new 
+          code block.
+          If that doesn't sound cool to you, maybe it's programmable built-in spell 
+          checker will get your attention, decreasing the amount of time you 
+          spend copying and pasting text back and forth between your html and 
+          a word document as you spell check website content for potentially 
+          embarrassing typos. Powerful features like these, if they exist, can 
+          typically be buried behind endless drop-down menus or unintuitive 
+          shortcut keys that are laden with combinations of modifier keys in a 
+          traditional editor. With Vim, its all just a keystroke away.
         </p>
         <p className="module__text">
           Vi was written in an era when sometimes it took seconds for a computer 
           to respond to a single keystroke, so there simply wasn't the resources 
           to create a memory-expensive editor. Because of this, it was essential 
-          that Vi could complete complex tasks with just a single keystroke, 
+          that Vi could complete complex tasks with as few keystrokes as possible, 
           thus resulting in an editor that is not only lightweight but capable 
-          of performing at lightning speeds.
+          of multi-tasking to such an extent that Vim is perhaps more accurately 
+          described, not as a text-editor, but as an actual programming 
+          language for editing text.
         </p>
         <h3 className="module__objectives">
           Vim is healthy
@@ -86,22 +128,24 @@ const SassOverview = (props) => {
           RSI is so damaging to a programmer that even in minor cases it can impact 
           the ability for us to code (either because we are forced to take additional 
           breaks or because the pain can interfere with our ability to think about 
-          our code).  This is why severe cases of RSI can quite literally end 
-          a professional career in programming.
+          our code).  This is why severe cases of RSI can challenge the ability 
+          of continuing to pursue programming.
         </p>
         <p className="module__text">
           With a nearly infinite number of shortcuts and programmability, Vim 
           not only reduces the number of keystrokes required to complete our 
-          edits, but it also removes almost all of the horrifically awkward 
-          stretches that accompany most editors (e.g. VScode's ctrl+shift+e to 
-          enter the file browser that forces the hand to contort over your 
-          pinky). Because nearly all standard editor functions can be completed 
-          in Vim with just 1-2 keystrokes, Vim users end up performing millions 
-          (if not billions) of fewer keystrokes over their careers.
-        </p>
-        <p className="module__text">
-          If I sound biased in this manner, it is because I am, as I developed 
-          RSI early on in my programming career.  My cure?  I learned Vim.
+          edits, but it also removes a great deal of hand contortions we often 
+          are not even really cognizant of. The majority of shortcuts employed 
+          by traditional text editors are typically loaded with combinations of 
+          ctrl, alt, shift, and command. Vim on the other hand allows the use of 
+          modes to differentiate between when we are performing operations, typing, 
+          or selecting. If we wished to delete a word, we simply type "dw", if 
+          we wish to delete 2 words, we type "2dw". An entire line of code, "dd", 
+          or perhaps an entire block of code, "dap". If you think about how many 
+          keystrokes it would take to perform these kinds of operations in a 
+          traditional editor, you can probably begin to appreciate how 
+          Vim users end up performing millions (if not billions) of fewer 
+          keystrokes over their careers.
         </p>
         <h3 className="module__objectives">
           Vim is everywhere
@@ -122,27 +166,23 @@ const SassOverview = (props) => {
         <p className="module__text">
           Vim is not an IDE, so even with the endless customization options and 
           plugins available, if you have to have a true IDE like Visual Studio 
-          or Xcode, Vim is only going to get you part of the way there. Vim is 
-          purely a text editor.
+          or Xcode, Vim is only going to get you part of the way there.
         </p>
         <p className="module__text">
           Vim also comes with a learning curve. There is a joke that if you want 
           to slow down someone new to programming, open Vim and tell them to 
-          close it.  Because Vim uses various modes, beginners to Vim can often 
-          feel overwhelmed with their initial inability to perform tasks they 
-          never imagined could vary from one editor to another (such as saving 
-          or quitting).
+          close it.  Because Vim is modal, beginners to Vim can often feel 
+          overwhelmed with their initial inability to perform tasks they never 
+          imagined could vary from one editor to another (such as saving or 
+          quitting). Because Vim is so programmatic, learning Vim will have the 
+          same kind of learning curve when learning to use any new language. 
+          Remember when you learned how to write for loops for the first time? 
+          I'm sure that by now you don't even think about the construction 
+          of a for loop, the same will be true with Vim.
         </p>
         <h3 className="module__objectives">
-          Roadmap 
+          And most importantly, Vim is <em>way</em> better than Emacs &#x1F601;
         </h3>
-        <p className="module__text">
-          This course will take you from a true Vim beginner to a place where 
-          you are comfortable using Vim either as your main editor or as needed 
-          when working with remote systems. The primary focus is to teach you 
-          how to think in Vim so you can continue to grow and eventually become 
-          a Vim power-user with time.
-        </p>
       </div>    
       <div className="module__buttons">
         <a 
