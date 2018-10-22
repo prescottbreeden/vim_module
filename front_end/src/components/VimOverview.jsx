@@ -42,8 +42,9 @@ const SassOverview = (props) => {
           A brief history of Vi
         </h3>
         <p className="module__text">
-          The evolution of Vim is intricately woven to the history of Vi. Vi was
-          created in 1976 and, up until then, some of the most popular editors, like 
+          Since Vim is built on the backbone of Vi, to understand the origin of 
+          Vim we really need to understand the origin of Vi. Vi was created in 
+          1976 and, up until then, some of the most popular editors, like 
           "qed", would appear completely alien to us today.  These "line-editors" 
           had no menus, and often required typing out regex strings in order to 
           navigate around because they could only view one line at a time. Take 

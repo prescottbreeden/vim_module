@@ -51,7 +51,7 @@ const CourseOverview = (props) => {
       </div>    
       <div className="module__buttons">
         <a 
-          href={prevPage}
+          href="/"
           className="btn">
           Prev
         </a>
