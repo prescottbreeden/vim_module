@@ -92,19 +92,25 @@ const SassOverview = (props) => {
           just a fraction of the memory that other standard editors use) then 
           other editors must be using that memory to offer more power. Yet, the 
           irony is that even the best rated editors like VScode, Atom, Sublime, 
-          do not even approach what Vim can do before we begin adding our own 
-          custom plugins, macros and key mappings. For instance, every programmer 
-          is well acquainted with their clipboard for copying and pasting code. 
-          Vim has the equivalent of nearly 40 clipboards (registries) which can append 
-          text to them at any point in time. This means that you can scan down 
-          your code line by line and grab specific lines related to a function you wish to
-          refactor to be independent of its current function and just continue 
-          adding them to the same registry, and then paste it all at once to the new 
-          code block.
-          If that doesn't sound cool to you, maybe it's programmable built-in spell 
-          checker will get your attention, decreasing the amount of time you 
-          spend copying and pasting text back and forth between your html and 
-          a word document as you spell check website content for potentially 
+          do not even approach what Vim can do out of the box (before we begin 
+          adding our own custom plugins, macros and key mappings). 
+        </p>
+        <p className="module__text"> 
+          For instance, every programmer is well acquainted with their clipboard 
+          for copying and pasting code. Vim has the equivalent of more than 40 
+          clipboards (registries) which can append text to them at any point in 
+          time. This means that you can scan down your code line by line and grab 
+          specific lines related to a function you wish to refactor to be 
+          independent of its current function and just continue adding them to 
+          the same registry, and then paste it all at once to the new code block. 
+          Need to copy unrelated code in the process for later usage? Just store 
+          them on a different registry!
+        </p>
+        <p className="module__text"> 
+          If that doesn't sound cool to you, maybe it's programmable built-in 
+          spell-checker will get your attention, decreasing the amount of time 
+          you spend copying and pasting text back and forth between your html 
+          and a word document as you check website content for potentially 
           embarrassing typos. Powerful features like these, if they exist, can 
           typically be buried behind endless drop-down menus or unintuitive 
           shortcut keys that are laden with combinations of modifier keys in a 
@@ -133,12 +139,13 @@ const SassOverview = (props) => {
           of continuing to pursue programming.
         </p>
         <p className="module__text">
-          With a nearly infinite number of shortcuts and programmability, Vim 
-          not only reduces the number of keystrokes required to complete our 
+          Vim not only reduces the number of keystrokes required to complete our 
           edits, but it also removes a great deal of hand contortions we often 
           are not even really cognizant of. The majority of shortcuts employed 
           by traditional text editors are typically loaded with combinations of 
-          ctrl, alt, shift, and command. Vim on the other hand allows the use of 
+          ctrl, alt, shift, and command. This is a common criticism of Vim's 
+          closest competitor, Emacs, which is so modifier heavy that programmers 
+          often refer to "Emacs pinky". Vim on the other hand allows the use of 
           modes to differentiate between when we are performing operations, typing, 
           or selecting. If we wished to delete a word, we simply type "dw", if 
           we wish to delete 2 words, we type "2dw". An entire line of code, "dd", 
@@ -155,8 +162,8 @@ const SassOverview = (props) => {
           Vim runs on all Unix platforms as well as all Windows platforms that 
           are XP or later. In most cases you will find that it is already installed 
           just waiting to be used. Because of this, Vim users often have their 
-          personal settings stored on GitHub and so whether you are working on 
-          a new machine or you are using a SSH to interact with server files 
+          personal settings stored in a Git repo and so whether you are working 
+          on a new machine or you are using a SSH to interact with server files 
           remotely, all you have to do is perform a simple git clone from the 
           machine's home directory and without a single extra command Vim will 
           automatically import all of your settings and preferences.
@@ -165,9 +172,10 @@ const SassOverview = (props) => {
           Does Vim have any cons?
         </h3>
         <p className="module__text">
-          Vim is not an IDE, so even with the endless customization options and 
-          plugins available, if you have to have a true IDE like Visual Studio 
-          or Xcode, Vim is only going to get you part of the way there.
+          Vim is not an IDE. If you need a true IDE like Visual Studio or Xcode, 
+          Vim is only going to get you part of the way there without extensive 
+          plugin customization (which may be more hassle than many are prepared 
+          to set up).
         </p>
         <p className="module__text">
           Vim also comes with a learning curve. There is a joke that if you want 
