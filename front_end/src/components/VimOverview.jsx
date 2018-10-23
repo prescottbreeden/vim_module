@@ -71,18 +71,14 @@ const SassOverview = (props) => {
           Vim is fast
         </h3>
         <p className="module__text">
-          As web development continues to evolve, the size of projects are becoming 
-          orders of magnitude larger. One of the largest issues that VScode is 
-          currently faced with is the amount of memory it consumes just to open 
-          even a boiler React app without spitting out memory error messages.
-        </p>
-        <p className="module__text">
           Vi was written in an era when sometimes it took seconds for a computer 
           to respond to a single keystroke, so there simply wasn't the resources 
           to create a memory-expensive editor. Because of this, it was essential 
           that Vi could complete complex tasks by writing out simple commands that 
           a computer could execute without requiring continuous feedback to the 
-          user.
+          user. With the power available to us with modern machines, the result 
+          today is an editor that loads files and performs operations in the 
+          order of milliseconds.
         </p>
         <h3 className="module__objectives">
           Vim is powerful
@@ -116,16 +112,6 @@ const SassOverview = (props) => {
           shortcut keys that are laden with combinations of modifier keys in a 
           traditional editor. With Vim, its all just a keystroke away.
         </p>
-        <p className="module__text">
-          Vi was written in an era when sometimes it took seconds for a computer 
-          to respond to a single keystroke, so there simply wasn't the resources 
-          to create a memory-expensive editor. Because of this, it was essential 
-          that Vi could complete complex tasks with as few keystrokes as possible, 
-          thus resulting in an editor that is not only lightweight but capable 
-          of multi-tasking to such an extent that Vim is perhaps more accurately 
-          described, not as a text-editor, but as an actual programming 
-          language for editing text.
-        </p>
         <h3 className="module__objectives">
           Vim is healthy
         </h3>
@@ -145,7 +131,10 @@ const SassOverview = (props) => {
           by traditional text editors are typically loaded with combinations of 
           ctrl, alt, shift, and command. This is a common criticism of Vim's 
           closest competitor, Emacs, which is so modifier heavy that programmers 
-          often refer to "Emacs pinky". Vim on the other hand allows the use of 
+          often refer to "Emacs pinky". 
+        </p>
+        <p className="module__text">
+          Vim on the other hand allows the use of 
           modes to differentiate between when we are performing operations, typing, 
           or selecting. If we wished to delete a word, we simply type "dw", if 
           we wish to delete 2 words, we type "2dw". An entire line of code, "dd", 
@@ -171,6 +160,13 @@ const SassOverview = (props) => {
         <h3 className="module__objectives">
           Does Vim have any cons?
         </h3>
+        <p className="module__text">
+          Customization is essential in order to make Vim feel like home. 
+          Because Vim doesn't have a graphical interface for changing settings, 
+          new users have to learn how to set up a customization file which can 
+          be daunting when learning.
+        </p>
+
         <p className="module__text">
           Vim is not an IDE. If you need a true IDE like Visual Studio or Xcode, 
           Vim is only going to get you part of the way there without extensive 
