@@ -1,4 +1,5 @@
 import React from 'react'
+import image from './vim_success.png'
 
 const SassInstall = (props) => {
   const page = props.page
@@ -8,143 +9,50 @@ const SassInstall = (props) => {
   return (
     <div className="module">
       <div className="module__container">
-        <h2 className="module__title">Sass Install</h2> 
+        <h2 className="module__title">Vim Install</h2> 
         <h3 className="module__objectives">
           Learning Objectives:
         </h3>
         <ul className="module__list">
           <li className="module__list--item">
-            How to install and run Sass
+            How to install and run Vim
           </li> 
         </ul>
         <h3 className="module__objectives">
-          Installing Sass Globally 
+          Installing Vim Globally 
         </h3>
         <p className="module__text">
-          There are a couple options for installing Sass globally:
+          First, check if you have Vim already installed by opening a terminal 
+          and executing:
         </p>
-        <ul className="module__list">
-          <li className="module__list--item u-list-circle">
-            GitHub
-          </li> 
-          <li className="module__list--item u-list-circle">
-            npm <strong>*</strong>
-          </li> 
-          <li className="module__list--item u-list-circle">
-            Chocolatey (Windows)
-          </li> 
-          <li className="module__list--item u-list-circle">
-            Homebrew (Mac OS X)
-          </li> 
-        </ul>
+        <p className="module__terminal-code">
+          $ vim 
+        </p>
         <p className="module__text">
-          <strong>*</strong> Please note that the npm version of Sass installs 
-          a pure JavaScript implementation which runs somewhat slower than the 
-          other options listed. However this isn't a real concern and Sass 
-          versions will largely fall on a team decision regarding preferences 
-          as opposed to necessities.
+          If vim is installed you should see a screen that looks like this: 
         </p>
+        <img 
+          src={image}
+          className="module__img" />
+        <p className="module__text">
+          To exit, type:
+        </p>
+        <p className="module__terminal-code">
+          :q
+        </p>
+        <p className="module__text">
+          and press 'Enter' and continue to next section.
+        </p>
+
         <h3 className="module__objectives">
           Linux Install
         </h3>
-        <ul className="module__list u-border-solid">
-          <li className="module__list--item">
-            Download the appropriate version of Sass from 
-            <a href="https://github.com/sass/dart-sass/releases/tag/1.14.2">
-              GitHub
-            </a>
-          </li> 
-          <li className="module__list--item">
-            Save the file to your home directory and rename it ".dart-sass".
-            The dot infront of the folder is simply to make it hidden. It is
-            not essential to hide the folder, but since we will never have to 
-            interact with the folder directly, it is just visual clutter that 
-            isn't needed.
-          </li> 
-          <li className="module__list--item">
-            Add sass to your path by executing:
-          </li> 
-          <p className="module__terminal-code">
-            $ export PATH=$PATH:~/.dart-sass
-          </p>
-          <li className="module__list--item">
-            Type 'sass' into your terminal. You should see a help menu appear
-            confirming the install.
-          </li> 
-        </ul>
         <h3 className="module__objectives">
           Mac OS X Install (Brew)
         </h3>
-        <ul className="module__list u-border-solid">
-          <li className="module__list--item">
-            From your terminal, execute:  
-          </li> 
-          <p className="module__terminal-code">
-            $ brew install sass/sass/sass
-          </p>
-          <span>(It's a very sassy install for Mac users!)</span>
-          <li className="module__list--item">
-            Type 'sass' into your terminal. You should see a help menu appear
-            confirming the install.
-          </li> 
-        </ul>
         <h3 className="module__objectives">
           Windwos Install (Chocolatey)
         </h3>
-        <ul className="module__list u-border-solid">
-          <li className="module__list--item">
-            From your command prompt, execute: 
-          </li> 
-          <p className="module__terminal-code">
-            C:\> choco install sass -prerelease
-          </p>
-          <li className="module__list--item">
-            Type 'sass' into your terminal. You should see a help menu appear
-            confirming the install.
-          </li> 
-        </ul>
-        <h3 className="module__objectives">
-          For the GUI of heart
-        </h3>
-        <p className="module__text">
-          This course will provide all examples and instructions directly from 
-          the command line; however, for those who either are uncomfortable 
-          using their terminal or simply prefer interacting with a graphical 
-          interface, there are two free open source applications available on 
-          all systems for download however this course will not cover them.
-        </p>
-        <ul className="module__list">
-          <li className="module__list--item">
-            Scout-App 
-          </li> 
-          <li className="module__list--item">
-            Koala
-          </li> 
-        </ul>
-        <h3 className="module__objectives">
-          Sass syntax:
-        </h3>
-        <p className="module__text">
-          There are two syntaxes available for Sass:
-        </p>
-        <ul className="module__list">
-          <li className="module__list--item">
-            <strong>.scss</strong> : (aka 'Sassy CSS') is written with 
-            brackets and nearly identical to regular CSS. SCSS files understand 
-            most CSS hacks and vendor-specific syntaxes (e.g. IE's old 'filter' 
-            syntax). SCSS files are saved with the file extension '.scss'.
-          </li> 
-          <li className="module__list--item">
-            <strong>.sass</strong> : a bracket-free, semi-colon-free, concise 
-            way of writing CSS which utilizes indentation rather than brackets 
-            to indicate nesting. Sass files are saved with the file extension 
-            '.sass'.
-          </li> 
-        </ul>
-        <p className="module__text">
-          In this course you will see example code written primarily in SCSS 
-          due to its popularity in codebases.
-        </p>
       </div>    
 
       <div className="module__buttons">

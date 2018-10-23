@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import Index from '../components/Index'
 import CourseOverview from '../components/CourseOverview'
 import VimOverview from '../components/VimOverview'
-// import SassInstall from '../components/SassInstall'
+import VimInstall from '../components/VimInstall'
 // import RunningSass from '../components/RunningSass'
 
 
@@ -56,6 +56,7 @@ class App extends Component {
               <Route path="/"  exact render={(props) => <Index page={0} />} />
               <Route path="/1" exact render={(props) => <CourseOverview page={1} />} />
               <Route path="/2" exact render={(props) => <VimOverview page={2} />} />
+              <Route path="/3" exact render={(props) => <VimInstall page={3} />} />
             </Switch>
           </main>
         </div>
